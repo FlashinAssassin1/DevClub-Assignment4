@@ -1,10 +1,13 @@
-console.log("Moodle+ successfully loaded!");
-const login_element = document.querySelector(""); // Fill the selector for the login element in ""
-let login_text = login_element.innerText;
-
-let question = ""; // Use split and array operations on the login_text string to extract the question
-
-let answer = ""; // Use if conditions to parse the question and calculate the answer. Make cases for all types of captcha asked
-
-const captcha_input_element = document.querySelector(""); // Fill the selector for the captcha input element in ""
-captcha_input_element.value = answer;
+let questionArray = document.querySelector('#login').innerText.split(" ")
+if (questionArray[5] == 'subtract') {
+    document.querySelector('#valuepkg3').value = questionArray[6] - questionArray[8]
+}
+else if (questionArray[5] == 'add') {
+    document.querySelector('#valuepkg3').value = Number(questionArray[6]) + Number(questionArray[8])
+}
+else if (questionArray[5] == 'enter', questionArray[6] == 'second') {
+    document.querySelector('#valuepkg3').value = questionArray[10]
+}
+else {
+    document.querySelector('#valuepkg3').value = questionArray[8]
+}
