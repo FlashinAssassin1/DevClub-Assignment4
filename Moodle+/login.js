@@ -1,3 +1,7 @@
+document.querySelector('#username').value = ""
+document.querySelector('#password').value = ""
+
+
 let questionArray = document.querySelector('#login').innerText.split(" ")
 if (questionArray[5] == 'subtract') {
     document.querySelector('#valuepkg3').value = questionArray[6] - questionArray[8]
@@ -11,3 +15,4 @@ else if (questionArray[5] == 'enter', questionArray[6] == 'second') {
 else {
     document.querySelector('#valuepkg3').value = questionArray[8]
 }
+document.querySelector('#loginbtn').click()
