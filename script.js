@@ -36,7 +36,7 @@ const myChart = new Chart(ctx, {
     data: {
         labels: datesArray ,
         datasets: [{
-            label: '# of Votes',
+            label: 'INDIAN COVID CASES OF PAST 30 DAYS',
             data: casesArray,
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
