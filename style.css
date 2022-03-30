@@ -1,10 +1,21 @@
+@keyframes color {
+    from {
+        color: brown;
+    }
+    to {
+      color: blue;
+    }
+  }
+
+
 body{
-    background-image: linear-gradient(#abd4eb,#faff96);  
+    background-image: linear-gradient(#abd4eb,#faff96); 
 }
 
 #stats{ font-family: 'Courier New', Courier, monospace;
     text-align: center;
     font-size: 300%;
+    animation: color 2s linear infinite alternate;
 }
 
 #global{
