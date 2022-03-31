@@ -3,19 +3,29 @@
         color: brown;
     }
     to {
-      color: blue;
+      color: black;
     }
   }
 
+@keyframes rotation {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(359deg);
+    }
+}
 
 body{
-    background-image: linear-gradient(#abd4eb,#faff96); 
+    background-color: #69b6ff;
+    margin: 0;
+    padding: 0;
 }
 
 #stats{ font-family: 'Courier New', Courier, monospace;
     text-align: center;
     font-size: 300%;
-    animation: color 2s linear infinite alternate;
+    animation: color 0.75s linear infinite alternate;
 }
 
 #global{
@@ -48,3 +58,24 @@ body{
     font-size: 200%;
 }
 
+#image{
+    width: 5%;
+    position: fixed;
+    left: 95%;
+    top: 0%;
+    animation: rotation 4s infinite linear;
+}
+
+#footer{
+background-color: skyblue;
+margin: 0;
+padding: 0;
+text-align: center;
+color: black;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#mail{
+    text-align: center;
+    color: purple;
+}

@@ -29,7 +29,7 @@ for(let i = respolength-30; i<respolength; i++) {
     datesArray[i- respolength + 30] = datesArray[i- respolength + 30].substring(0,10)
 }
 
-
+Chart.defaults.color = "#000000";
 const ctx = document.getElementById('myChart').getContext('2d');
 const myChart = new Chart(ctx, {
     type: 'line',
